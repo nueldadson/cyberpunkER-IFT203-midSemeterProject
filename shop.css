@@ -1,7 +1,8 @@
-*{
+* {
     transition: all 500ms ease-in-out;
 }
-body{
+
+body {
     background: blue;
     margin: 0px !important;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,23 +12,25 @@ body{
 }
 
 /* ----  Header  ---- */
-.logo{
+.logo {
     width: 125px;
 }
-header{
+
+header {
     height: 65px;
     max-height: 65px;
     background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px ;
+    padding: 0px 20px;
     box-shadow: 0px 4px 10px lightgray;
     position: sticky;
     top: 0px;
     z-index: 999;
 }
-header ul{
+
+header ul {
     padding: 0px;
     width: 50vw;
     min-width: 450px;
@@ -36,43 +39,40 @@ header ul{
     font-weight: 700;
     list-style: none;
 }
-header ul li{
+
+header ul li {
     color: gray;
 }
-.home{
+
+.navshop {
     color: orangered !important;
 }
-a{
+
+a {
     text-decoration: none;
     color: gray;
 }
+
 a:visited {
     color: gray;
 }
+
 a:hover {
     color: orangered;
 }
+
 a:active {
     color: purple;
 }
 
 /* ---  Main  --- */
-main{
+main {
     width: inherit !important;
     /* overflow-x: hidden; */
 }
 
-/* ----  Hero  ---- */
-.hero{
-    width: 100%;
-}
-.heroimg{
-    width: inherit;
-    height: inherit;
-}
-
 /* ---  Herobottom  --- */
-.herobottom{
+.herobottom {
     display: flex;
     width: inherit;
     justify-content: space-between;
@@ -80,44 +80,51 @@ main{
     background: white;
     border-bottom: 1px solid lightgray;
 }
+
 @media (max-width: 605px) {
-    .herobottom{
+    .herobottom {
         flex-direction: column;
         padding: 15px 30px;
         align-items: center;
     }
-    .herobottom span{
+
+    .herobottom span {
         margin-bottom: 7px;
     }
 }
 
 /* ---  Shop / Bestsellers  --- */
-.shop{
+.shop {
     width: inherit;
     padding: 10px 0px;
     background: white;
     border-bottom: 1px solid lightgray;
 }
-.shop h2{
+
+.shop h2 {
     padding: 10px 0px 0px 30px;
     font-weight: 700;
 }
+
 .bestseller {
     display: grid;
     gap: 35px;
     padding: 0px 30px 30px 30px;
     grid-template-columns: repeat(4, 1fr);
 }
+
 @media (max-width: 1000px) {
     .bestseller {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media (max-width: 800px) {
     .bestseller {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 .product {
     width: fit-content;
     display: flex !important;
@@ -125,71 +132,82 @@ main{
     background-color: white;
     border: 1px solid lightgray;
 }
-.productimg{
+
+.productimg {
     width: 100%;
 }
-.productdetail{
+
+.productdetail {
     width: inherit;
     display: flex;
     flex-direction: column;
     width: 100%;
     background: white;
 }
-.productname{
+
+.productname {
     font-weight: 600;
     padding: 20px 15px;
 }
-.price{
+
+.price {
     padding: 0px 20px 15px 0px;
     color: gray;
     margin-left: auto;
 }
 
 /* ---  Events & Partners  --- */
-.events{
+.events {
     width: inherit;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: rgb(251, 251, 251);
 }
-.eventsheading{
+
+.eventsheading {
     font-weight: 800;
     width: 100%;
     text-align: center;
 }
-.marqinside{
+
+.marqinside {
     display: flex !important;
     flex-direction: row !important;
     gap: 25px;
     min-width: fit-content;
 }
-.marqinside div{
+
+.marqinside div {
     width: 300px;
     display: flex;
     justify-content: center !important;
     align-items: center !important;
 }
-.marqinside div img{
+
+.marqinside div img {
     width: 100%;
 }
-.ccbootcamp{
+
+.ccbootcamp {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ccbootcamp h1{
+
+.ccbootcamp h1 {
     margin: 0;
     font-weight: 900;
     color: orangered;
 }
-.ccbootcamp span{
+
+.ccbootcamp span {
     color: darkblue;
     font-weight: 800;
 }
 
 /* ---  NewsLetter  --- */
-.newsletter{
+.newsletter {
     background: rgb(251, 251, 251);
     width: inherit;
     padding: 50px 20px;
@@ -197,33 +215,39 @@ main{
     justify-content: space-between;
     flex-direction: row;
 }
+
 @media (max-width: 605px) {
-    .newsletter{
+    .newsletter {
         flex-direction: column;
     }
-    .newsletterText{
+
+    .newsletterText {
         font-size: 30px !important;
         margin-bottom: 15px !important;
         font-weight: 500;
     }
 }
-.newsletter div{
+
+.newsletter div {
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
-    text-align: center;  
+    text-align: center;
 }
-.newsletterText{
+
+.newsletterText {
     font-size: 40px;
     font-weight: 600;
 }
-.newsletter form{
+
+.newsletter form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.newsletter input[type = 'email']{
+
+.newsletter input[type='email'] {
     height: 50px;
     width: 300px;
     font-size: large;
@@ -232,7 +256,8 @@ main{
     border-radius: 50px;
     padding: 10px 30px;
 }
-.newsletter input[type = 'submit']{
+
+.newsletter input[type='submit'] {
     margin-top: 20px;
     padding: 13px 35px;
     border-radius: 30px;
@@ -241,7 +266,8 @@ main{
     color: white;
     font-weight: 700;
 }
-.newsletter input[type = 'submit']:hover{
+
+.newsletter input[type='submit']:hover {
     border: 1px solid orange;
     color: black;
     background: orange;
@@ -253,6 +279,7 @@ footer {
     width: inherit;
     padding: 20px;
 }
+
 .footerinside {
     background: gray;
     border-radius: 20px;
@@ -263,16 +290,19 @@ footer {
     justify-content: space-between !important;
     width: inherit;
 }
+
 @media (max-width: 605px) {
     .footerinside {
         flex-direction: column;
     }
+
     .footerLinks,
     .footerSocials {
         width: 100%;
         justify-content: center;
         margin-bottom: 15px;
     }
+
     .footerLinks ul,
     .footerSocials ul {
         text-align: center;
@@ -280,23 +310,28 @@ footer {
     }
 
 }
+
 .footerAbout {
     display: flex;
     flex-direction: column;
     min-width: 120px;
     max-width: 300px;
 }
+
 .footerAbout img {
     width: 100%;
 }
+
 .footerAbout p {
     color: white;
     font-weight: 600;
 }
+
 .footerLinks {
     display: flex;
     height: 100%;
 }
+
 .footerLinks ul {
     padding: 0;
     display: flex;
@@ -305,16 +340,20 @@ footer {
     flex-direction: column;
     list-style: none;
 }
+
 .footerLinks ul a {
     color: white !important;
 }
+
 .footerLinks ul a:hover {
     color: orangered !important;
 }
+
 .footerSocials {
     display: flex;
     height: 100%;
 }
+
 .footerSocials ul {
     padding: 0;
     display: flex;
@@ -323,9 +362,11 @@ footer {
     flex-direction: column;
     list-style: none;
 }
+
 .footerSocials ul a {
     color: white !important;
 }
+
 .footerSocials ul a:hover {
     color: orangered !important;
 }
