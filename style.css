@@ -1,0 +1,189 @@
+*{
+    transition: all 500ms ease-in-out;
+}
+body{
+    background: blue;
+    margin: 0px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100vw;
+    background: white;
+    box-sizing: border-box;
+}
+
+/* ----  Header  ---- */
+.logo{
+    width: 125px;
+}
+header{
+    height: 65px;
+    max-height: 65px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px ;
+    box-shadow: 0px 4px 10px lightgray;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+header ul{
+    padding: 0px;
+    width: 50vw;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    list-style: none;
+}
+header ul li{
+    color: gray;
+}
+.home{
+    color: orangered !important;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: orangered;
+}
+a:active {
+    color: purple;
+}
+
+/* ---  Main  --- */
+main{
+    width: inherit !important;
+    /* overflow-x: hidden; */
+}
+
+/* ----  Hero  ---- */
+.hero{
+    width: 100%;
+}
+.heroimg{
+    width: inherit;
+    height: inherit;
+}
+
+/* ---  Herobottom  --- */
+.herobottom{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background: white;
+    border-bottom: 1px solid lightgray;
+}
+
+/* ---  Shop / Bestsellers  --- */
+.shop{
+    width: inherit;
+    padding: 30px 0px;
+    background: white;
+    border-bottom: 1px solid lightgray;
+}
+.shop h2{
+    padding: 30px 0px 0px 30px;
+    font-weight: 700;
+}
+.bestseller {
+    display: grid;
+    gap: 35px;
+    padding: 0px 30px 30px 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1000px) {
+    .bestseller {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 800px) {
+    .bestseller {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.product {
+    width: fit-content;
+    display: flex !important;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.productimg{
+    width: 100%;
+}
+.productdetail{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+}
+.productname{
+    font-weight: 600;
+    padding: 20px 15px;
+}
+.price{
+    padding: 0px 20px 15px 0px;
+    color: gray;
+    margin-left: auto;
+}
+
+/* ---  Events & Partners  --- */
+.events{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(251, 251, 251);
+}
+.eventsheading{
+    font-weight: 800;
+}
+.marqinside{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 25px;
+    min-width: fit-content;
+}
+.marqinside div{
+    width: 300px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.marqinside div img{
+    width: 100%;
+}
+.ccbootcamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ccbootcamp h1{
+    margin: 0;
+    font-weight: 900;
+    color: orangered;
+}
+.ccbootcamp span{
+    color: darkblue;
+    font-weight: 800;
+}
+
+/* ---  Footer  --- */
+footer{
+    background: white;
+    width: inherit;
+    padding: 20px;
+}
+footer div{
+    border-radius: 20px;
+    background: orangered;
+    padding: 40px 30px;
+}
