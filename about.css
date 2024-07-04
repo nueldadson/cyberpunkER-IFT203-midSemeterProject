@@ -44,8 +44,8 @@ header ul li {
     color: gray;
 }
 
-.navcontact {
-    color: orangered !important;
+.navabout {
+    color: orangered;
 }
 
 a {
@@ -77,7 +77,7 @@ a:active {
         display: block !important;
     }
 
-    .navcontact {
+    .navabout {
         color: white !important;
     }
 
@@ -126,95 +126,12 @@ a:active {
         }
     }
 
-} 
+}
 
 /* ---  Main  --- */
 main {
     width: inherit !important;
     /* overflow-x: hidden; */
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    scale: 0.9;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.contact-form,
-.contact-info {
-    padding: 30px;
-    flex: 1 1 50%;
-}
-
-.contact-form {
-    border-right: 1px solid #e0e0e0;
-}
-
-.contact-form h2 {
-    color: orangered;
-    margin-bottom: 10px;
-}
-
-.contact-form h1 {
-    margin-bottom: 20px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form form input,
-.contact-form form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form form textarea {
-    resize: none;
-    height: 100px;
-}
-
-.contact-form form button {
-    padding: 10px;
-    background-color: orangered;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-info {
-    max-width: inherit;
-}
-.contact-info p {
-    margin-bottom: 10px;
-}
-
-.contact-info .map {
-    margin-top: 20px;
-    width: 100%;
-    height: inherit;
-}
-
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-form,
-    .contact-info {
-        border-right: none;
-        border-bottom: 1px solid #e0e0e0;
-    }
 }
 
 /* ---  Events & Partners  --- */
