@@ -45,7 +45,7 @@ header ul li {
 }
 
 .navabout {
-    color: orangered;
+    color: orangered !important;
 }
 
 a {
@@ -132,6 +132,17 @@ a:active {
 main {
     width: inherit !important;
     /* overflow-x: hidden; */
+}
+
+/* ---  About --- */
+.about{
+    padding: 70px 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.about b{
+    font-weight: 900;
+    color: orangered;
 }
 
 /* ---  Events & Partners  --- */
